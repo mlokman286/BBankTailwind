@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header class="mt-10 mx-1 md:mx-5 xl:mx-80">
+        <!-- header top -->
+        <div class="flex justify-between bg-[#006666] px-3 py-2">
+            <div class="flex">
+                <div class="drawer mr-5">
+                    <!-- Drawer and sideber -->
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <!-- Page content here -->
+                        <label for="my-drawer" class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer" class="drawer-overlay"></label>
+                        <ul
+                            class="menu p-4 w-80 min-h-full bg-base-200 text-base-content uppercase text-lg font-semibold text-indigo-800">
+                            <!-- Sidebar content here -->
+                            <li><a>About Us</a></li>
+                            <li><a>Montery Policy</a></li>
+                            <li><a>Financial System</a></li>
+                            <li><a>Publication</a></li>
+                            <li><a>Media & Press Release</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- search -->
+                <div class="flex">
+                    <input
+                        class="bg-transparent outline-none border-b-2 text-white focus:w-56 transition focus:duration-300"
+                        type="search">
+                    <button class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white">English</h3>
+            </div>
+        </div>
+        <!-- header top end -->
+        <!-- header background bg-[url('images/bankbanner.jpg')] bg-no-repeat bg-cover-->
+        <div class="">
+            <div class="h-44 overflow-hidden bg-[url('images/bb_banner_576.jpg')] sm:bg-[url('images/bankbanner.jpg')] bg-cover">
+                <!-- <img class="w-full" src="images/bankbanner.jpg" alt=""> -->
+            </div>
+            <div class="grid justify-end">
+                <ul class="menu menu-horizontal invisible lg:visible text-lg font-semibold lg:relative lg:bottom-14">
+                    <li class="bg-white"><a>About Us</a></li>
+                    <li class="bg-white"><a>Montery Policy</a></li>
+                    <li class="bg-white"><a>Financial System</a></li>
+                    <li class="bg-white"><a>Publication</a></li>
+                    <li class="bg-white"><a>Media & Press Release</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="mx-1 md:mx-5 xl:mx-80">
+        <!-- slides and Govornor -->
+        <section class="bg-slate-100 md:flex gap-3 md:gap-0 py-2 md:py-0">
+            <!-- slides -->
+            <div class="md:w-3/4 md:px-2 md:py-2">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="images/slide_img/fepd_webnotice_sep2023.jpg" class="w-full px-24" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide5" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="images/slide_img/bfiu_webnotice_nov2022.jpg" class="w-full px-24" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="images/slide_img/nov092022_moneychanger_hp.jpg" class="w-full px-24" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="images/slide_img/fbfakenews_oct2022.jpg" class="w-full px-24" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide5" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide5" class="carousel-item relative w-full">
+                        <img src="images/slide_img/bbweb_domain_eng.jpg" class="w-full px-24" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Govornor -->
+            <div class="md:w-1/4 md:py-2">
+                <h1 class="uppercase bg-green-600 text-white font-extrabold pl-2">Honorable Govornor</h1>
+                <div class="flex gap-2 p-2">
+                    <div class="w-1/2 md:w-2/5">
+                        <img class="w-fit" src="images/abdurrouftalukder.jpg" alt="">
+                    </div>
+                    <div class="md:text-sm w-1/2 md:w-3/5">
+                        <h1 class="font-bold text-base">MR. ABDUR ROUF TALUKDER</h1>
+                        <p class="text-xs">HONORABLE GOVERNOR OF BANGLADESH BANK</p><br>
+                        <a href="" class="hover:text-red-600">more ..</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breaking News -->
+        <section>
+            <div class="flex">
+                <h1 class="text-white bg-green-600 px-4 py-1 font-medium uppercase rounded-l-md">Recent News</h1>
+                <p class="ml-2">Here wiil be a slide</p>
+            </div>
+        </section>
+        <!-- cards section -->
+        <section class="mt-2 md:flex">
+            <!-- for cards -->
+            <div class="md:w-4/5">
+                <!-- information cards -->
+                <div class="grid mx-8 gap-8 lg:grid-cols-2">
+
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-green-500 hover:border-red-500 rounded-lg p-2 space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold">Montery Policy</h1>
+                        <div class="p-2 flex">
+                            <div>
+                                <svg class="w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #3bebff
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="layer_1-2" data-name="layer 1">
+                                            <path class="cls-1"
+                                                d="M39 48H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h38a1 1 0 0 1 1 1v5h-2V2H2v44h36V24h2v23a1 1 0 0 1-1 1z" />
+                                            <path class="cls-1"
+                                                d="M4 4h2v2H4zM8 4h2v2H8zM12 4h2v2h-2zM1 8h35v2H1zM43.65 16.92a1 1 0 0 1-.71-.29l-5.57-5.57a1 1 0 0 1 0-1.42l2.76-2.76a3 3 0 0 1 4.25 0l2.74 2.74a3 3 0 0 1 0 4.25l-2.76 2.76a1 1 0 0 1-.71.29zm-4.16-6.57 4.16 4.16 2.06-2.06a1 1 0 0 0 0-1.41L43 8.29a1 1 0 0 0-1.41 0zM13 42a1 1 0 0 1-.71-.29 1 1 0 0 1-.22-1.07l3.48-9.06a1 1 0 0 1 .72-.61 1 1 0 0 1 .92.27l5.57 5.57a1 1 0 0 1 .27.92 1 1 0 0 1-.61.72l-9.06 3.48A.92.92 0 0 1 13 42zm3.86-8.26-2.12 5.52 5.52-2.12z" />
+                                            <path class="cls-1"
+                                                d="M22.06 38.52a1 1 0 0 1-.71-.3l-5.57-5.57a1 1 0 0 1 0-1.41l21.59-21.6a1 1 0 0 1 1.41 0l5.58 5.58a1 1 0 0 1 .29.7 1 1 0 0 1-.29.71l-21.6 21.59a1 1 0 0 1-.7.3zm-4.16-6.58 4.16 4.16 20.18-20.18-4.16-4.16z" />
+                                            <path class="cls-1" transform="rotate(-44.99 26.239 27.768)"
+                                                d="M25.24 23.82h2v7.88h-2z" />
+                                            <path class="cls-1"
+                                                d="M6 40h7v2H6zM6 34h6v2H6zM6 28h9v2H6zM14 22h7v2h-7zM6 22h6v2H6zM19 16h8v2h-8zM6 16h11v2H6z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href=""> MPS (July-December 2023)</a></li>
+                                    <li><a class="hover:text-red-500" href="">Monetary Policy</a></li>
+                                    <li><a class="hover:text-red-500" href="">Banknotes & Coins</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Repo Reverse Repo Auction</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-red-500 rounded-lg p-2  space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold hover:text-red-500">MEDIA &
+                            PRESS RELEASE</h1>
+                        <div class="p-2 flex gap-4">
+                            <div class="">
+                                <svg class="w-16" fill="#3bebff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <g data-name="14-Book">
+                                        <path
+                                            d="M29 0H7a5 5 0 0 0-5 5v22a5 5 0 0 0 5 5h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 30H7a3 3 0 0 1 0-6h18a3 3 0 0 1 2.82 2H11v2h17zm0-7a5 5 0 0 0-3-1H7a5 5 0 0 0-3 1V5a3 3 0 0 1 3-3h21z" />
+                                        <path
+                                            d="M7 26h2v2H7zM11.83 14.75l-1.54 1.54 1.41 1.41 1.54-1.54a5 5 0 0 0 1.76.74V19h2v-2.1a5 5 0 0 0 1.75-.73l1.54 1.54 1.41-1.41-1.54-1.54A5 5 0 0 0 20.9 13H23v-2h-2.1a5 5 0 0 0-.73-1.75l1.54-1.54-1.42-1.42-1.54 1.54A5 5 0 0 0 17 7.1V5h-2v2.1a5 5 0 0 0-1.75.73l-1.54-1.54-1.42 1.42 1.54 1.54A5 5 0 0 0 11.1 11H9v2h2.1a5 5 0 0 0 .73 1.75zM16 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href="">Circulars/Circular Letters
+                                        </a></li>
+                                    <li><a class="hover:text-red-500" href="">Press Release</a></li>
+                                    <li><a class="hover:text-red-500" href="">Regulations And Guidelines</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Procurements Underway</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-green-500 hover:border-red-500 rounded-lg p-2 space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold">Montery Policy</h1>
+                        <div class="p-2 flex">
+                            <div>
+                                <svg class="w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #3bebff
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="layer_1-2" data-name="layer 1">
+                                            <path class="cls-1"
+                                                d="M39 48H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h38a1 1 0 0 1 1 1v5h-2V2H2v44h36V24h2v23a1 1 0 0 1-1 1z" />
+                                            <path class="cls-1"
+                                                d="M4 4h2v2H4zM8 4h2v2H8zM12 4h2v2h-2zM1 8h35v2H1zM43.65 16.92a1 1 0 0 1-.71-.29l-5.57-5.57a1 1 0 0 1 0-1.42l2.76-2.76a3 3 0 0 1 4.25 0l2.74 2.74a3 3 0 0 1 0 4.25l-2.76 2.76a1 1 0 0 1-.71.29zm-4.16-6.57 4.16 4.16 2.06-2.06a1 1 0 0 0 0-1.41L43 8.29a1 1 0 0 0-1.41 0zM13 42a1 1 0 0 1-.71-.29 1 1 0 0 1-.22-1.07l3.48-9.06a1 1 0 0 1 .72-.61 1 1 0 0 1 .92.27l5.57 5.57a1 1 0 0 1 .27.92 1 1 0 0 1-.61.72l-9.06 3.48A.92.92 0 0 1 13 42zm3.86-8.26-2.12 5.52 5.52-2.12z" />
+                                            <path class="cls-1"
+                                                d="M22.06 38.52a1 1 0 0 1-.71-.3l-5.57-5.57a1 1 0 0 1 0-1.41l21.59-21.6a1 1 0 0 1 1.41 0l5.58 5.58a1 1 0 0 1 .29.7 1 1 0 0 1-.29.71l-21.6 21.59a1 1 0 0 1-.7.3zm-4.16-6.58 4.16 4.16 20.18-20.18-4.16-4.16z" />
+                                            <path class="cls-1" transform="rotate(-44.99 26.239 27.768)"
+                                                d="M25.24 23.82h2v7.88h-2z" />
+                                            <path class="cls-1"
+                                                d="M6 40h7v2H6zM6 34h6v2H6zM6 28h9v2H6zM14 22h7v2h-7zM6 22h6v2H6zM19 16h8v2h-8zM6 16h11v2H6z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href=""> MPS (July-December 2023)</a></li>
+                                    <li><a class="hover:text-red-500" href="">Monetary Policy</a></li>
+                                    <li><a class="hover:text-red-500" href="">Banknotes & Coins</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Repo Reverse Repo Auction</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-red-500 rounded-lg p-2  space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold hover:text-red-500">MEDIA &
+                            PRESS RELEASE</h1>
+                        <div class="p-2 flex gap-4">
+                            <div class="">
+                                <svg class="w-16" fill="#3bebff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <g data-name="14-Book">
+                                        <path
+                                            d="M29 0H7a5 5 0 0 0-5 5v22a5 5 0 0 0 5 5h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 30H7a3 3 0 0 1 0-6h18a3 3 0 0 1 2.82 2H11v2h17zm0-7a5 5 0 0 0-3-1H7a5 5 0 0 0-3 1V5a3 3 0 0 1 3-3h21z" />
+                                        <path
+                                            d="M7 26h2v2H7zM11.83 14.75l-1.54 1.54 1.41 1.41 1.54-1.54a5 5 0 0 0 1.76.74V19h2v-2.1a5 5 0 0 0 1.75-.73l1.54 1.54 1.41-1.41-1.54-1.54A5 5 0 0 0 20.9 13H23v-2h-2.1a5 5 0 0 0-.73-1.75l1.54-1.54-1.42-1.42-1.54 1.54A5 5 0 0 0 17 7.1V5h-2v2.1a5 5 0 0 0-1.75.73l-1.54-1.54-1.42 1.42 1.54 1.54A5 5 0 0 0 11.1 11H9v2h2.1a5 5 0 0 0 .73 1.75zM16 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href="">Circulars/Circular Letters
+                                        </a></li>
+                                    <li><a class="hover:text-red-500" href="">Press Release</a></li>
+                                    <li><a class="hover:text-red-500" href="">Regulations And Guidelines</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Procurements Underway</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-green-500 hover:border-red-500 rounded-lg p-2 space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold">Montery Policy</h1>
+                        <div class="p-2 flex">
+                            <div>
+                                <svg class="w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #3bebff
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="layer_1-2" data-name="layer 1">
+                                            <path class="cls-1"
+                                                d="M39 48H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h38a1 1 0 0 1 1 1v5h-2V2H2v44h36V24h2v23a1 1 0 0 1-1 1z" />
+                                            <path class="cls-1"
+                                                d="M4 4h2v2H4zM8 4h2v2H8zM12 4h2v2h-2zM1 8h35v2H1zM43.65 16.92a1 1 0 0 1-.71-.29l-5.57-5.57a1 1 0 0 1 0-1.42l2.76-2.76a3 3 0 0 1 4.25 0l2.74 2.74a3 3 0 0 1 0 4.25l-2.76 2.76a1 1 0 0 1-.71.29zm-4.16-6.57 4.16 4.16 2.06-2.06a1 1 0 0 0 0-1.41L43 8.29a1 1 0 0 0-1.41 0zM13 42a1 1 0 0 1-.71-.29 1 1 0 0 1-.22-1.07l3.48-9.06a1 1 0 0 1 .72-.61 1 1 0 0 1 .92.27l5.57 5.57a1 1 0 0 1 .27.92 1 1 0 0 1-.61.72l-9.06 3.48A.92.92 0 0 1 13 42zm3.86-8.26-2.12 5.52 5.52-2.12z" />
+                                            <path class="cls-1"
+                                                d="M22.06 38.52a1 1 0 0 1-.71-.3l-5.57-5.57a1 1 0 0 1 0-1.41l21.59-21.6a1 1 0 0 1 1.41 0l5.58 5.58a1 1 0 0 1 .29.7 1 1 0 0 1-.29.71l-21.6 21.59a1 1 0 0 1-.7.3zm-4.16-6.58 4.16 4.16 20.18-20.18-4.16-4.16z" />
+                                            <path class="cls-1" transform="rotate(-44.99 26.239 27.768)"
+                                                d="M25.24 23.82h2v7.88h-2z" />
+                                            <path class="cls-1"
+                                                d="M6 40h7v2H6zM6 34h6v2H6zM6 28h9v2H6zM14 22h7v2h-7zM6 22h6v2H6zM19 16h8v2h-8zM6 16h11v2H6z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href=""> MPS (July-December 2023)</a></li>
+                                    <li><a class="hover:text-red-500" href="">Monetary Policy</a></li>
+                                    <li><a class="hover:text-red-500" href="">Banknotes & Coins</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Repo Reverse Repo Auction</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-red-500 rounded-lg p-2  space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold hover:text-red-500">MEDIA &
+                            PRESS RELEASE</h1>
+                        <div class="p-2 flex gap-4">
+                            <div class="">
+                                <svg class="w-16" fill="#3bebff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <g data-name="14-Book">
+                                        <path
+                                            d="M29 0H7a5 5 0 0 0-5 5v22a5 5 0 0 0 5 5h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 30H7a3 3 0 0 1 0-6h18a3 3 0 0 1 2.82 2H11v2h17zm0-7a5 5 0 0 0-3-1H7a5 5 0 0 0-3 1V5a3 3 0 0 1 3-3h21z" />
+                                        <path
+                                            d="M7 26h2v2H7zM11.83 14.75l-1.54 1.54 1.41 1.41 1.54-1.54a5 5 0 0 0 1.76.74V19h2v-2.1a5 5 0 0 0 1.75-.73l1.54 1.54 1.41-1.41-1.54-1.54A5 5 0 0 0 20.9 13H23v-2h-2.1a5 5 0 0 0-.73-1.75l1.54-1.54-1.42-1.42-1.54 1.54A5 5 0 0 0 17 7.1V5h-2v2.1a5 5 0 0 0-1.75.73l-1.54-1.54-1.42 1.42 1.54 1.54A5 5 0 0 0 11.1 11H9v2h2.1a5 5 0 0 0 .73 1.75zM16 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href="">Circulars/Circular Letters
+                                        </a></li>
+                                    <li><a class="hover:text-red-500" href="">Press Release</a></li>
+                                    <li><a class="hover:text-red-500" href="">Regulations And Guidelines</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Procurements Underway</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-green-500 hover:border-red-500 rounded-lg p-2 space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold">Montery Policy</h1>
+                        <div class="p-2 flex">
+                            <div>
+                                <svg class="w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #3bebff
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="layer_1-2" data-name="layer 1">
+                                            <path class="cls-1"
+                                                d="M39 48H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h38a1 1 0 0 1 1 1v5h-2V2H2v44h36V24h2v23a1 1 0 0 1-1 1z" />
+                                            <path class="cls-1"
+                                                d="M4 4h2v2H4zM8 4h2v2H8zM12 4h2v2h-2zM1 8h35v2H1zM43.65 16.92a1 1 0 0 1-.71-.29l-5.57-5.57a1 1 0 0 1 0-1.42l2.76-2.76a3 3 0 0 1 4.25 0l2.74 2.74a3 3 0 0 1 0 4.25l-2.76 2.76a1 1 0 0 1-.71.29zm-4.16-6.57 4.16 4.16 2.06-2.06a1 1 0 0 0 0-1.41L43 8.29a1 1 0 0 0-1.41 0zM13 42a1 1 0 0 1-.71-.29 1 1 0 0 1-.22-1.07l3.48-9.06a1 1 0 0 1 .72-.61 1 1 0 0 1 .92.27l5.57 5.57a1 1 0 0 1 .27.92 1 1 0 0 1-.61.72l-9.06 3.48A.92.92 0 0 1 13 42zm3.86-8.26-2.12 5.52 5.52-2.12z" />
+                                            <path class="cls-1"
+                                                d="M22.06 38.52a1 1 0 0 1-.71-.3l-5.57-5.57a1 1 0 0 1 0-1.41l21.59-21.6a1 1 0 0 1 1.41 0l5.58 5.58a1 1 0 0 1 .29.7 1 1 0 0 1-.29.71l-21.6 21.59a1 1 0 0 1-.7.3zm-4.16-6.58 4.16 4.16 20.18-20.18-4.16-4.16z" />
+                                            <path class="cls-1" transform="rotate(-44.99 26.239 27.768)"
+                                                d="M25.24 23.82h2v7.88h-2z" />
+                                            <path class="cls-1"
+                                                d="M6 40h7v2H6zM6 34h6v2H6zM6 28h9v2H6zM14 22h7v2h-7zM6 22h6v2H6zM19 16h8v2h-8zM6 16h11v2H6z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href=""> MPS (July-December 2023)</a></li>
+                                    <li><a class="hover:text-red-500" href="">Monetary Policy</a></li>
+                                    <li><a class="hover:text-red-500" href="">Banknotes & Coins</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Repo Reverse Repo Auction</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-red-500 rounded-lg p-2  space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold hover:text-red-500">MEDIA &
+                            PRESS RELEASE</h1>
+                        <div class="p-2 flex gap-4">
+                            <div class="">
+                                <svg class="w-16" fill="#3bebff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <g data-name="14-Book">
+                                        <path
+                                            d="M29 0H7a5 5 0 0 0-5 5v22a5 5 0 0 0 5 5h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 30H7a3 3 0 0 1 0-6h18a3 3 0 0 1 2.82 2H11v2h17zm0-7a5 5 0 0 0-3-1H7a5 5 0 0 0-3 1V5a3 3 0 0 1 3-3h21z" />
+                                        <path
+                                            d="M7 26h2v2H7zM11.83 14.75l-1.54 1.54 1.41 1.41 1.54-1.54a5 5 0 0 0 1.76.74V19h2v-2.1a5 5 0 0 0 1.75-.73l1.54 1.54 1.41-1.41-1.54-1.54A5 5 0 0 0 20.9 13H23v-2h-2.1a5 5 0 0 0-.73-1.75l1.54-1.54-1.42-1.42-1.54 1.54A5 5 0 0 0 17 7.1V5h-2v2.1a5 5 0 0 0-1.75.73l-1.54-1.54-1.42 1.42 1.54 1.54A5 5 0 0 0 11.1 11H9v2h2.1a5 5 0 0 0 .73 1.75zM16 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href="">Circulars/Circular Letters
+                                        </a></li>
+                                    <li><a class="hover:text-red-500" href="">Press Release</a></li>
+                                    <li><a class="hover:text-red-500" href="">Regulations And Guidelines</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Procurements Underway</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-green-500 hover:border-red-500 rounded-lg p-2 space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold">Montery Policy</h1>
+                        <div class="p-2 flex">
+                            <div>
+                                <svg class="w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #3bebff
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="layer_1-2" data-name="layer 1">
+                                            <path class="cls-1"
+                                                d="M39 48H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h38a1 1 0 0 1 1 1v5h-2V2H2v44h36V24h2v23a1 1 0 0 1-1 1z" />
+                                            <path class="cls-1"
+                                                d="M4 4h2v2H4zM8 4h2v2H8zM12 4h2v2h-2zM1 8h35v2H1zM43.65 16.92a1 1 0 0 1-.71-.29l-5.57-5.57a1 1 0 0 1 0-1.42l2.76-2.76a3 3 0 0 1 4.25 0l2.74 2.74a3 3 0 0 1 0 4.25l-2.76 2.76a1 1 0 0 1-.71.29zm-4.16-6.57 4.16 4.16 2.06-2.06a1 1 0 0 0 0-1.41L43 8.29a1 1 0 0 0-1.41 0zM13 42a1 1 0 0 1-.71-.29 1 1 0 0 1-.22-1.07l3.48-9.06a1 1 0 0 1 .72-.61 1 1 0 0 1 .92.27l5.57 5.57a1 1 0 0 1 .27.92 1 1 0 0 1-.61.72l-9.06 3.48A.92.92 0 0 1 13 42zm3.86-8.26-2.12 5.52 5.52-2.12z" />
+                                            <path class="cls-1"
+                                                d="M22.06 38.52a1 1 0 0 1-.71-.3l-5.57-5.57a1 1 0 0 1 0-1.41l21.59-21.6a1 1 0 0 1 1.41 0l5.58 5.58a1 1 0 0 1 .29.7 1 1 0 0 1-.29.71l-21.6 21.59a1 1 0 0 1-.7.3zm-4.16-6.58 4.16 4.16 20.18-20.18-4.16-4.16z" />
+                                            <path class="cls-1" transform="rotate(-44.99 26.239 27.768)"
+                                                d="M25.24 23.82h2v7.88h-2z" />
+                                            <path class="cls-1"
+                                                d="M6 40h7v2H6zM6 34h6v2H6zM6 28h9v2H6zM14 22h7v2h-7zM6 22h6v2H6zM19 16h8v2h-8zM6 16h11v2H6z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href=""> MPS (July-December 2023)</a></li>
+                                    <li><a class="hover:text-red-500" href="">Monetary Policy</a></li>
+                                    <li><a class="hover:text-red-500" href="">Banknotes & Coins</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Repo Reverse Repo Auction</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-red-500 rounded-lg p-2  space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold hover:text-red-500">MEDIA &
+                            PRESS RELEASE</h1>
+                        <div class="p-2 flex gap-4">
+                            <div class="">
+                                <svg class="w-16" fill="#3bebff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <g data-name="14-Book">
+                                        <path
+                                            d="M29 0H7a5 5 0 0 0-5 5v22a5 5 0 0 0 5 5h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 30H7a3 3 0 0 1 0-6h18a3 3 0 0 1 2.82 2H11v2h17zm0-7a5 5 0 0 0-3-1H7a5 5 0 0 0-3 1V5a3 3 0 0 1 3-3h21z" />
+                                        <path
+                                            d="M7 26h2v2H7zM11.83 14.75l-1.54 1.54 1.41 1.41 1.54-1.54a5 5 0 0 0 1.76.74V19h2v-2.1a5 5 0 0 0 1.75-.73l1.54 1.54 1.41-1.41-1.54-1.54A5 5 0 0 0 20.9 13H23v-2h-2.1a5 5 0 0 0-.73-1.75l1.54-1.54-1.42-1.42-1.54 1.54A5 5 0 0 0 17 7.1V5h-2v2.1a5 5 0 0 0-1.75.73l-1.54-1.54-1.42 1.42 1.54 1.54A5 5 0 0 0 11.1 11H9v2h2.1a5 5 0 0 0 .73 1.75zM16 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href="">Circulars/Circular Letters
+                                        </a></li>
+                                    <li><a class="hover:text-red-500" href="">Press Release</a></li>
+                                    <li><a class="hover:text-red-500" href="">Regulations And Guidelines</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Procurements Underway</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-green-500 hover:border-red-500 rounded-lg p-2 space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold">Montery Policy</h1>
+                        <div class="p-2 flex">
+                            <div>
+                                <svg class="w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #3bebff
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="layer_1-2" data-name="layer 1">
+                                            <path class="cls-1"
+                                                d="M39 48H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h38a1 1 0 0 1 1 1v5h-2V2H2v44h36V24h2v23a1 1 0 0 1-1 1z" />
+                                            <path class="cls-1"
+                                                d="M4 4h2v2H4zM8 4h2v2H8zM12 4h2v2h-2zM1 8h35v2H1zM43.65 16.92a1 1 0 0 1-.71-.29l-5.57-5.57a1 1 0 0 1 0-1.42l2.76-2.76a3 3 0 0 1 4.25 0l2.74 2.74a3 3 0 0 1 0 4.25l-2.76 2.76a1 1 0 0 1-.71.29zm-4.16-6.57 4.16 4.16 2.06-2.06a1 1 0 0 0 0-1.41L43 8.29a1 1 0 0 0-1.41 0zM13 42a1 1 0 0 1-.71-.29 1 1 0 0 1-.22-1.07l3.48-9.06a1 1 0 0 1 .72-.61 1 1 0 0 1 .92.27l5.57 5.57a1 1 0 0 1 .27.92 1 1 0 0 1-.61.72l-9.06 3.48A.92.92 0 0 1 13 42zm3.86-8.26-2.12 5.52 5.52-2.12z" />
+                                            <path class="cls-1"
+                                                d="M22.06 38.52a1 1 0 0 1-.71-.3l-5.57-5.57a1 1 0 0 1 0-1.41l21.59-21.6a1 1 0 0 1 1.41 0l5.58 5.58a1 1 0 0 1 .29.7 1 1 0 0 1-.29.71l-21.6 21.59a1 1 0 0 1-.7.3zm-4.16-6.58 4.16 4.16 20.18-20.18-4.16-4.16z" />
+                                            <path class="cls-1" transform="rotate(-44.99 26.239 27.768)"
+                                                d="M25.24 23.82h2v7.88h-2z" />
+                                            <path class="cls-1"
+                                                d="M6 40h7v2H6zM6 34h6v2H6zM6 28h9v2H6zM14 22h7v2h-7zM6 22h6v2H6zM19 16h8v2h-8zM6 16h11v2H6z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href=""> MPS (July-December 2023)</a></li>
+                                    <li><a class="hover:text-red-500" href="">Monetary Policy</a></li>
+                                    <li><a class="hover:text-red-500" href="">Banknotes & Coins</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Repo Reverse Repo Auction</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-lg hover:shadow-gray-400 border-t-8 border-red-500 rounded-lg p-2  space-y-5">
+                        <h1 class="uppercase border-l-4 border-green-500 px-3 font-bold hover:text-red-500">MEDIA &
+                            PRESS RELEASE</h1>
+                        <div class="p-2 flex gap-4">
+                            <div class="">
+                                <svg class="w-16" fill="#3bebff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <g data-name="14-Book">
+                                        <path
+                                            d="M29 0H7a5 5 0 0 0-5 5v22a5 5 0 0 0 5 5h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 30H7a3 3 0 0 1 0-6h18a3 3 0 0 1 2.82 2H11v2h17zm0-7a5 5 0 0 0-3-1H7a5 5 0 0 0-3 1V5a3 3 0 0 1 3-3h21z" />
+                                        <path
+                                            d="M7 26h2v2H7zM11.83 14.75l-1.54 1.54 1.41 1.41 1.54-1.54a5 5 0 0 0 1.76.74V19h2v-2.1a5 5 0 0 0 1.75-.73l1.54 1.54 1.41-1.41-1.54-1.54A5 5 0 0 0 20.9 13H23v-2h-2.1a5 5 0 0 0-.73-1.75l1.54-1.54-1.42-1.42-1.54 1.54A5 5 0 0 0 17 7.1V5h-2v2.1a5 5 0 0 0-1.75.73l-1.54-1.54-1.42 1.42 1.54 1.54A5 5 0 0 0 11.1 11H9v2h2.1a5 5 0 0 0 .73 1.75zM16 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <ul class="list-['>']">
+                                    <li><a class="hover:text-red-500" href="">Circulars/Circular Letters
+                                        </a></li>
+                                    <li><a class="hover:text-red-500" href="">Press Release</a></li>
+                                    <li><a class="hover:text-red-500" href="">Regulations And Guidelines</a></li>
+                                    <li><a class="hover:text-red-500" href=""></a>Procurements Underway</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+                <!-- Rating cards -->
+                <div class="bg-[#F7F5F3] mx-2 mt-5 mb-5 p-3 shadow shadow-gray-400 grid md:grid-cols-3 gap-4 ">
+                    <div class="">
+                        <h1 class="text-lg font-medium">POLICY RATES</h1>
+                        <div class="flex justify-between mt-1">
+                            <p>Policy Rate (Repo Rate)</p>
+                            <p>6.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>SLF Rate</p>
+                            <p>8.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>SDF Rate</p>
+                            <p>4.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Bank Rate</p>
+                            <p>4.00%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-medium">RESERVE RATIOS</h1>
+                        <div class="flex justify-between  mt-1">
+                            <p>Policy Rate (Repo Rate)</p>
+                            <p>6.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>SLF Rate</p>
+                            <p>8.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>SDF Rate</p>
+                            <p>4.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Bank Rate</p>
+                            <p>4.00%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-medium">INTER-BANK EXCHANGE RATE</h1>
+                        <div class="flex justify-between  mt-1">
+                            <p>Policy Rate (Repo Rate)</p>
+                            <p>6.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>SLF Rate</p>
+                            <p>8.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>SDF Rate</p>
+                            <p>4.50%</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Bank Rate</p>
+                            <p>4.00%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- emargency lines and details -->
+            <div class="md:w-1/5 mx-2 border-t-8 border-black rounded py-2 space-y-4">
+                <div class="bg-[#F7F5F3] p-3">
+                    <h1 class="font-extrabold text-red-500">ICT SECURITY ALERT</h1>
+                    <a class="hover:text-red-500" href="">ICT Security Advisories & Alerts</a>
+                </div>
+                <div class="bg-[#F7F5F3] p-3">
+                    <h1 class="font-extrabold text-red-500">CUSTOMERS' INTEREST PROTECTION CENTER(CIPC)</h1>
+                    <p class="font-semibold text-green-500">FOR ANY COMPLAINT</p>
+                    <a class="hover:text-red-500" href="">ICT Security Advisories & Alerts</a>
+                    <div class=" text-center">
+                        <h1 class="font-semibold text-5xl text-gray-500">Call: 16236</h1>
+                        <p>Email: bb.cipc@bb.org.bd</p>
+                        <p><a href="" class="hover:text-red-500">Download Mobile App</a></p>
+                        <p><a href="" class="hover:text-red-500">Submit Online</a></p>
+                    </div>
+                    <p class="text-right"><a class="hover:text-red-500" href="">View All →</a></p>
+                </div>
+                <div class="bg-[#F7F5F3] p-3">
+                    <h1 class="font-extrabold text-red-500 line-clamp-3">SIX MONTHS MOVING AVERAGE RATE OF TREASURY BILL(SMART)</h1>
+                    <div class="text-center">
+                        <p>September, 2023</p>
+                        <p>(Applicable for October,2023)</p>
+                    </div>
+                    <p class="font-semibold text-green-500">FOR ANY COMPLAINT</p>
+                    <a class="hover:text-red-500" href="">ICT Security Advisories & Alerts</a>
+                    <div class=" text-center">
+                        <h1 class="font-semibold text-5xl text-gray-500">7.20</h1>
+                    </div>
+                    <p><a href="">Previous 6 months' SMART</a></p>
+                    <br><br><hr class="border-b-2 border-red-600 w-4/5"><br>
+                    <p class="font-bold text-red-400 text-lg">Call Money rate</p>
+                    <div class="text-center">
+                        <p>27 September, 2023</p>
+                        <p class="text-blue-600">Weighted Average Interest Rate     </p>
+                        <h1 class="font-semibold text-5xl text-gray-500">6.67</h1>
+                    </div>
+                    <p class="text-right"><a class="hover:text-red-500" href="">View All →</a></p><br>
+                    <h1 class="font-bold text-red-400 text-lg">UPCOMING AUCTIONS</h1>
+                    <br>
+                    <div class="flex justify-between border-y-4">
+                        <p class="text-green-500 font-medium">BILL</p>
+                        <p>October, 2023</p>
+                        <p class="p-2 bg-orange-500 text-white font-semibold">01</p>
+                    </div>
+                    <div class="flex justify-between border-y-4 mt-2">
+                        <p class="text-green-500 font-medium">BILL</p>
+                        <p>October, 2023</p>
+                        <p class="p-2 bg-orange-500 text-white font-semibold">03</p>
+                    </div>
+                </div>
+                <div class="bg-[#F7F5F3] p-3">
+                    <h1 class="text-red-500 font-bold">EMERGENCY HOTLINE</h1>
+                    <br>
+                    <hr class="border-b-1 border-gray-400"><br>
+                    <div class="">
+                        <img class="mx-auto" src="images/national-helpline.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
